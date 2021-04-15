@@ -3,27 +3,27 @@ import java.util.Scanner;
 public class Number {
 	
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);	//스캔
+		Scanner scan = new Scanner(System.in);	//�뒪罹�
 			
-		int random=0;	//랜덤 변수
+		int random=0;	//�옖�뜡 蹂��닔
 			
-		int count=0;	//카운트 변수
+		int count=0;	//移댁슫�듃 蹂��닔
 		
-		System.out.print("10개의 랜덤 숫자 중 하나를 맞춰보세요(1~50까지): ");	//프린트
+		System.out.print("10媛쒖쓽 �옖�뜡 �닽�옄 以� �븯�굹瑜� 留욎떠蹂댁꽭�슂(1~50源뚯�): ");	//�봽由고듃
 		
-		int number = scan.nextInt();	//스캔
+		int number = scan.nextInt();	//�뒪罹�
 		
-		for(int i=0; i<10; i++) {	//반복문
-			random = (int)((Math.random()*50)+1);	//랜덤으로 숫자
+		for(int i=0; i<10; i++) {	//諛섎났臾�
+			random = (int)((Math.random()*50)+1);	//�옖�뜡�쑝濡� �닽�옄
 			
-			System.out.print(random + " ");	//출력
+			System.out.print(random + " ");	//異쒕젰
 			
-			if(random==number) count++;	//같으면 카운트 쁠쁠
+			if(random==number) count++;	//媛숈쑝硫� 移댁슫�듃 �걽�걽
 			}
 		
-		if(count>0)	System.out.println("\n당첨!");	//1이면 당첨 출력
-		else System.out.println("\n꽝");	//아니면 꽝 출력
+		if(count>0)	System.out.println("\n�떦泥�!");	//1�씠硫� �떦泥� 異쒕젰
+		else System.out.println("\n苑�");	//�븘�땲硫� 苑� 異쒕젰
 		scan.close();
 	}
 }
-//배고프다
+//諛곌퀬�봽�떎
